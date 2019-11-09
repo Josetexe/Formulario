@@ -1,0 +1,38 @@
+ <html>
+	<head>
+	<title>Formulario</title>
+	<link rel="shortcut icon" href="images/favicon.jpg" />
+	</head>	
+		<body>
+		
+		<form action="envio.php" method="POST" enctype="multipart/form-data">
+		
+		<fieldset>
+		<legend>Datos personales</legend>
+		
+		<label for="nom">Nombre:</label><input type="text" id="nom" size="30" ><br><br>
+		<label for="tel">Teléfono:</label><input type="text" name="tel" size="30" maxlength="9" ><br><br>
+		<label for="dni">DNI:</label><input type="text" name="dni" size="10" maxlength="10"><br><br>
+		<label for="cv">CV:</label><input type="file" name="cv"><br><br>
+		Comentarios<br>
+		<textarea cols="50" rows="10">Escribe tu comentario aquí</textarea>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos de conexión</legend>
+		<label for="usu">Usuario:</label><input type="text" name="usu" size="30"><br><br>
+		<label for="pwd">Contraseña:</label><input type="password" name="pwd" size="30"><br><br>
+		<label for="rpwd">Repite contraseña:</label><input type="password" name="rpwd" size="30"><br><br>
+		<label for="ciudad">Ciudad:</label><select>
+			<option value="valc">Valencia</option>
+			<option value="alc">Alcorcon</option>
+			<option value="bcn">Barcelona</option>
+			<option value="madrid">Madrid</option>
+		</select>
+		</fieldset>
+		
+		<input type="submit" value="Enviar datos"> &nbsp; &nbsp;<input type="reset" value="Borrar datos"/>
+			
+		</form>
+		</body>
+</html>
